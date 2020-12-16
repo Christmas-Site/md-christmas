@@ -16,8 +16,8 @@
 
 .gift {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: calc(50vh - 0px);
+  left: calc(50vw - 20px);
   width: 64px;
   height: 64px;
 }
