@@ -508,6 +508,12 @@ header {
   flex-basis: 200px;
 }
 
+@media (max-width: 800px) {
+  .comic {
+    padding: 0;
+  }
+}
+
 /* background colours */
 
 .panel:nth-child(4n + 1) {
