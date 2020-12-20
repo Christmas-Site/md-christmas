@@ -371,6 +371,7 @@ header {
   margin-top: -25%;
   transform: rotate(10deg);
   z-index: 7;
+  overflow: hidden;
 }
 
 /* Christmas Card */
