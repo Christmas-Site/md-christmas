@@ -1,12 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat&display=swap");
 
+*:not(.lightrope li, .speech, .gift, map) {
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   background-color: #eaf6ff;
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 h1,
@@ -29,6 +32,12 @@ a {
   color: #fff;
 }
 
+header {
+  position: absolute;
+  width: 100%;
+  z-index: 5;
+}
+
 /* Preloader */
 
 .preloader {
@@ -37,6 +46,7 @@ a {
   height: 100%;
   background-color: #eaf6ff;
   z-index: 999;
+  overflow-x: auto;
 }
 
 .gift {
@@ -80,20 +90,12 @@ a {
   }
 }
 
-/* Navigation */
-
-header {
-  position: absolute;
-  width: 100%;
-  z-index: 5;
-}
-
 /* Lights */
 
 .lightrope {
   text-align: center;
   white-space: nowrap;
-  overflow: hidden;
+  overflow-x: initial;
   position: absolute;
   z-index: 1;
   margin: -5px 0 0 0;
@@ -400,136 +402,45 @@ header {
   }
 }
 
-/* Comic */
+/* Masonrt Grid */
 
-.comic {
-  display: flex;
-  flex-wrap: wrap;
-  font-family: "Comic Sans", cursive;
-  padding: 100px;
-}
-
-.panel {
-  background-color: #fff;
-  border: solid 2px #000;
-  box-shadow: 0 6px 6px -6px #000;
-  display: inline-block;
-  flex: 1 1;
-  height: 250px;
-  margin: 1vmin;
+.grid-container {
+  columns: 5 200px;
+  column-gap: 1.5rem;
+  width: 90%;
+  margin: 0 auto;
   overflow: hidden;
-  position: relative;
-  background-size: cover;
-  background-position: center;
 }
 
-.ctext {
-  background-color: #fff;
-  border: solid 2px #000;
-  margin: 0;
-  padding: 3px 10px;
-}
-
-.top-left {
-  left: -6px;
-  position: absolute;
-  top: -2px;
-  transform: skew(-15deg);
-}
-
-.bottom-right {
-  bottom: -2px;
-  position: absolute;
-  right: -6px;
-  transform: skew(-15deg);
-}
-
-.speech {
-  background-color: #fff;
-  border: solid 2px #000;
-  border-radius: 12px;
+.grid-container div {
+  width: 150px;
+  margin: 0 1.5rem 1.5rem 0;
   display: inline-block;
-  margin: 0.5em;
-  padding: 0.5em 1em;
-  position: relative;
+  width: 100%;
+  padding: 5px;
+  box-shadow: 2px 2px 2px #eaf6ff;
+  border-radius: 5px;
+  transition: all 0.25s ease-in-out;
+  overflow: hidden;
 }
 
-.speech:before {
-  border: solid 12px transparent;
-  border-left: solid 12px #000;
-  border-top: solid 12px #000;
-  bottom: -24px;
-  content: "";
-  height: 0;
-  left: 24px;
-  position: absolute;
-  transform: skew(-15deg);
-  width: 0;
+.grid-container div img {
+  width: 100%;
+  transition: 0.5s;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.25s ease-in-out;
 }
 
-.speech:after {
-  border: solid 10px transparent;
-  border-left: solid 10px #fff;
-  border-top: solid 10px #fff;
-  bottom: -19px;
-  content: "";
-  height: 0;
-  left: 150px;
-  position: absolute;
-  transform: skew(60deg);
-  width: 0;
+.grid-container div img:hover {
+  transform: scale(1.1);
 }
 
-.panel:nth-child(1) {
-  flex-basis: 500px;
-}
-.panel:nth-child(2) {
-  flex-basis: 200px;
-}
-.panel:nth-child(3) {
-  flex-basis: 200px;
-}
-.panel:nth-child(4) {
-  flex-basis: 200px;
-}
-.panel:nth-child(5) {
-  flex-basis: 200px;
-}
-.panel:nth-child(6) {
-  flex-basis: 200px;
-}
-.panel:nth-child(7) {
-  flex-basis: 400px;
-}
-.panel:nth-child(8) {
-  flex-basis: 200px;
-}
-.panel:nth-child(9) {
-  flex-basis: 200px;
-}
-
-@media (max-width: 800px) {
-  .comic {
-    padding: 0;
-  }
-}
-
-/* background colours */
-
-.panel:nth-child(4n + 1) {
-  background-image: radial-gradient(circle, yellow, orange);
-}
-
-.panel:nth-child(4n + 2) {
-  background-image: radial-gradient(circle, lightblue, deepskyblue);
-}
-
-.panel:nth-child(4n + 3) {
-  background-image: radial-gradient(circle, palegreen, yellowgreen);
-}
-
-.panel:nth-child(4n + 4) {
-  background-image: radial-gradient(circle, lightcoral, tomato);
+.grid-container div p {
+  margin: 5px 0;
+  padding: 0;
+  text-align: center;
+  font-style: italic;
 }
 
 /* Footer */
@@ -538,7 +449,11 @@ footer {
   bottom: 0;
 }
 
-svg {
+footer .snow {
+  height: 50% !important;
+}
+
+footer svg {
   position: absolute;
 }
 
@@ -547,6 +462,8 @@ footer img {
   height: auto;
 }
 
-footer .snow {
-  height: 50% !important;
+footer p {
+  text-align: center;
+  font-size: 2em;
+  font-family: "Kaushan Script", cursive;
 }
