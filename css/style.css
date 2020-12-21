@@ -95,7 +95,7 @@ header {
 .lightrope {
   text-align: center;
   white-space: nowrap;
-  overflow-x: initial;
+  overflow: hidden;
   position: absolute;
   z-index: 1;
   margin: -5px 0 0 0;
@@ -393,12 +393,16 @@ header {
   z-index: 6;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 500px) {
   .text {
     padding: 25px;
   }
+  .bow {
+    margin: -45% 15% auto;
+  }
   .holly {
-    margin: -20% 0 20% 0;
+    margin: 2% 25%;
+    transform: none;
   }
 }
 
@@ -438,9 +442,15 @@ header {
 
 .grid-container div p {
   margin: 5px 0;
-  padding: 0;
+  padding-top: 10px;
   text-align: center;
   font-style: italic;
+}
+
+@media (max-width: 500px) {
+  .grid-container div img:hover {
+    transform: none;
+  }
 }
 
 /* Footer */
