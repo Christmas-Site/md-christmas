@@ -1,4 +1,4 @@
-/* Preload */
+/* Preloader */
 
 setTimeout(function () {
   $(".preloader").fadeToggle();
