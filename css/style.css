@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat&display=swap");
 
-*:not(.lightrope li, .speech, .gift, map) {
+*:not(.lightrope li, .speech, .gift, map, section) {
   overflow-x: hidden;
 }
 
@@ -462,10 +462,11 @@ header {
 
 footer {
   bottom: 0;
+  background-color: #CDD9E6;
 }
 
 footer .snow {
-  height: 50% !important;
+  height: 70% !important;
 }
 
 footer svg {
@@ -482,6 +483,13 @@ footer p {
   font-size: 2em;
   font-family: "Kaushan Script", cursive;
 }
+
+@media (max-width: 500px) {
+  footer .snow {
+    height: 20% !important;
+  }
+}
+
 
 /* Index */
 .container {
