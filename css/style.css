@@ -447,7 +447,7 @@ header {
 
 .grid-container div p {
   margin: 5px 0;
-  padding-top: 10px;
+  padding-top: 25px;
   text-align: center;
   font-style: italic;
 }
@@ -455,6 +455,9 @@ header {
 @media (max-width: 500px) {
   .grid-container div img:hover {
     transform: none;
+  }
+  .grid-container div p {
+  padding-top: 5px;
   }
 }
 
