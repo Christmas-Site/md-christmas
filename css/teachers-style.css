@@ -202,7 +202,8 @@ nav ul li a:hover {
     width: 100%;
   }
   nav ul li a {
-    display: block;
+    display: flex;
+    justify-content: center;
     text-align: center;
     border-radius: 0;
     color: #000;
