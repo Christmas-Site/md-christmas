@@ -461,10 +461,6 @@ nav ul li a:hover {
   width: 65%;
 }
 
-.landing .landing-text h1 {
-  font-size: 4rem;
-}
-
 .landing .landing-text p {
   margin-top: 2rem;
 }
@@ -623,7 +619,7 @@ nav ul li a:hover {
 
 @media only screen and (max-width: 756px) {
   h1 {
-    font-size: 2.3rem !important;
+    font-size: 1.3rem !important;
   }
 
   .landing-text h1 {
