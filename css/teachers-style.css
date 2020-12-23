@@ -41,8 +41,9 @@ a {
 
 .gift {
   position: absolute;
-  top: calc(50vh - 50px);
-  left: calc(50vw - 50px);
+  left: 50%;
+  top: 50%;
+  margin: -35px 0 0 -35px;
   width: 64px;
   height: 64px;
 }
