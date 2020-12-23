@@ -770,10 +770,10 @@ nav ul li a:hover {
     transform: rotate(0);
   }
 }
-
 /* Footer */
 
 footer {
+  bottom: 0;
   background-color: #cdd9e6;
 }
 
@@ -791,12 +791,14 @@ footer img {
 }
 
 footer p {
+  margin-bottom: 0;
+  padding-bottom: 20px;
   text-align: center;
   font-size: 2em;
   font-family: "Kaushan Script", cursive;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 1050px) {
   footer .snow {
     height: 20% !important;
   }
