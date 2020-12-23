@@ -484,7 +484,7 @@ footer p {
   font-family: "Kaushan Script", cursive;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   footer .snow {
     height: 20% !important;
   }
