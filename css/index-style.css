@@ -122,7 +122,8 @@ header.sticky {
 }
 
 header.sticky .logo,
-header a.active {
+header.sticky a {
+  font-size: 1em;
   color: #000;
 }
 
