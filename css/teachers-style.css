@@ -93,10 +93,6 @@ header {
   z-index: 10;
 }
 
-.logo {
-  font-size: 2em;
-}
-
 header.sticky {
   background-color: #fff;
   box-shadow: 0 0 5px 0;
@@ -104,6 +100,7 @@ header.sticky {
 
 header.sticky .logo,
 header.sticky a {
+  font-size: 2em;
   color: #000;
 }
 
