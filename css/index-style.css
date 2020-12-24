@@ -643,16 +643,18 @@ nav ul li a:hover {
     width: 100%;
   }
 
-  .display-desktop {
-    display: none;
-  }
-
   .team .container {
     flex-direction: column;
   }
 
   .team-box {
     margin: 1.5em auto;
+  }
+
+  #brad {
+    transform: translateX(100px) !important;
+    transform: translateY(500px) !important;
+    opacity: 20% !important;
   }
 }
 
@@ -661,6 +663,8 @@ nav ul li a:hover {
 #brad {
   -webkit-transform: translateX(500px);
   transform: translateX(500px);
+
+  opacity: 100%;
 }
 
 #sanie {
