@@ -117,6 +117,7 @@ header {
 }
 
 header.sticky {
+  padding-top: 20px;
   background-color: #fff;
   box-shadow: 0 0 5px 0;
 }
