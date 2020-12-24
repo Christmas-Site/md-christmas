@@ -101,14 +101,14 @@ header.sticky {
 
 header.sticky .logo,
 header.sticky a {
-  font-size: 1em;
+  font-size: 1.2em;
   color: #000;
 }
 
 header .logo.active,
 header .logo:hover {
   color: #c6d4ff;
-  transition: 0.6s;
+  transition: .6s;
 }
 
 nav ul {
